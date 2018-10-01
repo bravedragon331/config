@@ -1,0 +1,137 @@
+{
+  "local": {
+    "version":"v1",
+    "db": {
+      "username": "local",
+      "password": "",
+      "database": "staging",
+      "host": "127.0.0.1",
+      "dialect": "mysql",
+      "dialectOptions": {
+        "supportBigNumbers": true,
+        "bigNumberStrings": true
+      }
+    },
+    "redis": {
+      "enableReadyCheck": true,
+      "host": "localhost",
+      "port": "6379",
+      "keyPrefix": "WooCommerce:"
+    },
+    "urls": {
+      "host": "http://localhost:3000",
+      "api": "http://localhost:6161/pcapi/pc-api",
+      "auth": "http://localhost:3001/auth/authenticationservice",
+      "cart": "http://localhost:3003/cart/shoppingcartservice",
+      "newProducts": "http://localhost:3006/prod/productserviceoo",
+      "products": "http://localhost:3009/prod/productservice",
+      "purchase": "http://localhost:3005/purchase/purchaseservice",
+      "wooCommerce" : "http://localhost:3011/woo/woocommerceservice",
+      "analytics" : "http://localhost:3008/analytics/analyticsservice",
+      "twitchKrakenAPI": "https://api.twitch.tv/kraken/channels",
+      "twitchHelixAPI": "https://api.twitch.tv/helix"
+    }
+  },
+  "development": {
+    "version":"v1",
+    "db": {
+      "host": "ysp9sse09kl0tzxj.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+      "username": "t6ecv1bw9m1dpi3c",
+      "password": "tncdju2it0bliecp",
+      "database": "jon7fdor6ct1t7l0",
+      "dialect": "mysql",
+      "dialectOptions": {
+        "supportBigNumbers": true,
+        "bigNumberStrings": true
+      }
+    },
+    "redis": {
+      "enableReadyCheck": true,
+      "host": "soldierfish.redistogo.com",
+      "port": "10695",
+      "keyPrefix": "WooCommerce:",
+      "password": "d21588a66576baa4e400144791ec5b46"
+    },
+    "urls": {
+      "host": "http://localhost:3000",
+      "api": "https://stage.simustream.com:6161/pcapi/pc-api",
+      "products": "https://stage.simustream.com:3009",
+      "auth": "https://stage.simustream.com:3000",
+      "cart": "https://stage.simustream.com:3003",
+      "purchase": "https://stage.simustream.com:3005",
+      "wooCommerce": "https://stage.simustream.com:3011",
+      "newProducts": "https://stage.simustream.com:3006",
+      "analytics" : "https://stage.simustream.com:3008",
+      "twitchKrakenAPI": "https://api.twitch.tv/kraken/channels",
+      "twitchHelixAPI": "https://api.twitch.tv/helix"
+    }
+  },
+  "stage": {
+    "version":"v1",
+    "db": {
+      "host": "development.csnff6nsihnq.us-east-2.rds.amazonaws.com",
+      "username": "stage_user",
+      "password": "PtTCN^9fPz",
+      "database": "staging",
+      "dialect": "mysql",
+      "dialectOptions": {
+        "supportBigNumbers": true,
+        "bigNumberStrings": true
+      }
+    },
+    "redis": {
+      "enableReadyCheck": true,
+      "host": "soldierfish.redistogo.com",
+      "port": "11975",
+      "keyPrefix": "WooCommerce:",
+      "password": "1894926b311ab715c2ec1a1a0786a7b8"
+    },
+    "urls": {
+      "host": "https://stage.simustream.com",
+      "api": "https://stage.simustream.com/pcapi",
+      "products": "https://stage.simustream.com/oldprod",
+      "auth": "https://stage.simustream.com/auth",
+      "cart": "https://stage.simustream.com/cart",
+      "purchase": "https://stage.simustream.com/purch",
+      "wooCommerce": "https://stage.simustream.com/woo",
+      "newProducts": "https://stage.simustream.com/prod",
+      "analytics" : "https://stage.simustream.com/analytics",
+      "twitchHelixAPI": "https://api.twitch.tv/helix",
+      "twitchKrakenAPI": "https://api.twitch.tv/kraken/channels"
+    }
+  },
+  "production": {
+    "version":"v1",
+    "db": {
+      "host": "sf2g6p37iruiqqze.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+      "username": "kpu65eczrvdixb8o",
+      "password": "vbbrb59oayfc35nr",
+      "database": "primary_app_db",
+      "dialect": "mysql",
+      "dialectOptions": {
+        "supportBigNumbers": true,
+        "bigNumberStrings": true
+      }
+    },
+    "redis": {
+      "enableReadyCheck": true,
+      "host": "soldierfish.redistogo.com",
+      "port": "11874",
+      "keyPrefix": "WooCommerce:",
+      "password": "b4945d5dc4f85b5b7fa3076cd6e76120"
+    },
+    "urls": {
+      "host": "https://prod.simustream.com",
+      "api": "https://prod.simustream.com/pcapi",
+      "products": "https://prod.simustream.com/oldprod",
+      "auth": "https://prod.simustream.com/auth",
+      "cart": "https://prod.simustream.com/cart",
+      "purchase": "https://prod.simustream.com/purch",
+      "wooCommerce": "https://prod.simustream.com/woo",
+      "newProducts": "https://prod.simustream.com/prod",
+      "analytics" : "https://prod.simustream.com/analytics",
+      "twitchHelixAPI": "https://api.twitch.tv/helix",
+      "twitchKrakenAPI": "https://api.twitch.tv/kraken/channels"
+    }
+  }
+}
